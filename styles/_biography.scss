@@ -1,0 +1,105 @@
+header {
+    @include navigation
+}
+
+// BIOGRAPHY PAGE
+.biographyForest {
+    background-image: url(../assets/forest.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    display: flex;
+    align-items: center;    
+}
+
+.fullBio {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    h1 {
+    color: $red;
+    padding: 30px 0;
+    font-size: 4rem;
+    font-weight: 400;
+    }
+
+    .line {
+        width: 50%;
+        border-top: 2px solid $red;
+        float: right;
+    }
+
+    p {
+        color: $darkblue;
+    }
+}   
+
+.textImageContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    .bioImage1 {
+        width: 10%;
+        padding-left: 80px;
+    }
+}
+
+.lineTwo {
+    width: 70px;
+    border-top: 2px solid $red;
+    display: inline-block;
+    padding-bottom: 40px;
+    margin: 0 45%;
+}
+
+aside {
+    background-color: $darkblue;
+}
+
+.bioImage2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap:70px;
+
+}
+
+
+// FOOTER FOR ALL PAGES
+
+footer {
+    @include footer;
+}
+
+
+// MEDIA QUERIES
+@media only screen and (max-width: 950px) {
+
+    h1 {
+        font-size: 3rem
+    }
+
+    .textImageContainer {
+        flex-direction: column-reverse;
+        width: 100%;
+
+        .bioImage1 {
+            padding-left: 0;
+            width: 50%;
+            padding-bottom: 20px;
+        }
+    }
+
+    .bioImage2 {
+        display: block;
+        
+        img {
+            margin: 0 auto;
+        }
+    }
+}

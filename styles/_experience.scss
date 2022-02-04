@@ -1,0 +1,119 @@
+.experienceMain {
+        background-image: url(../assets/GerryTalking.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 45rem;
+        overflow: hidden;
+}
+
+.fullExp {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    h1 {
+        color: $red;
+        padding: 30px 0;
+        font-size: 4rem;
+        font-weight: 400;
+        }
+
+    .line {
+        width: 50%;
+        border-top: 2px solid $red;
+        float: right;
+    }
+
+    p {
+        padding-top: 50px;
+        color: $darkblue;
+    }
+}
+
+.logoContainer {
+
+    background-color: $darkblue;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        li {
+            margin: 25px;
+        }
+    }
+}
+
+.mainContainer {
+    padding-top: 40px;
+    padding-bottom: 90px;
+
+}
+
+
+.experienceContainer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+    .leftText {
+        background-color: #C4CCD6;
+        width: 80%;
+
+    
+        p {
+            color: $darkblue;
+            font-size: 2rem;
+            margin-top: 15px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 35px;
+        }
+
+
+        .read {
+            background-color: $red;
+            color:#FFFFFF;
+            font-family: "Monserrat", sans-serif;
+            font-weight: 500;
+            padding: 15px 20px;
+            margin-left: 40px;
+            text-decoration: none;
+        }
+    }
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 45px;
+    margin-left: 40px;
+    
+}
+
+// MEDIA QUERIES
+@media only screen and (max-width: 1084px) {
+
+    .leftText {
+        padding-bottom: 50px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .rightImg {
+        display: none;
+    }   
+}
+
+@media only screen and (max-width: 950px) {
+    h1 {
+        font-size: 3rem
+    }
+
+}

@@ -1,0 +1,65 @@
+.contact {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    h1 {
+        color: $red;
+        padding: 30px 0;
+        font-size: 4rem;
+        font-weight: 400;
+        }
+
+    .line {
+        width: 50%;
+        border-top: 2px solid $red;
+        float: right;
+    }
+
+    p {
+        padding-top: 50px;
+        color: $darkblue;
+    }
+}
+
+
+.contactImage {
+    background-image: url(../assets/GerryCanoe1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 45rem;
+        overflow: hidden;
+}
+
+
+
+.socialContact {
+    color: $red;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    
+
+
+    li a {
+        text-decoration: none;
+        color: $red;
+    }
+
+    .fab,
+    .far {
+        padding-right: 10px;
+        padding-bottom: 30px;
+        font-size: 2.5rem;
+        vertical-align: top;
+    }
+}
+
+// MEDIA QUERIES
+@media only screen and (max-width: 950px) {
+    h1 {
+        font-size: 3rem
+    }
+}

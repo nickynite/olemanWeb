@@ -1,0 +1,296 @@
+
+/* BIOGRAPHY */
+.bio {
+    background-color: $darkblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bioText {
+    padding-top: 90px;
+    width: 70%;
+
+    :nth-child(2) {
+        padding-bottom: 40px;
+    }
+}
+
+.bioText p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color:#FFFFFF;
+    margin-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+.view {
+    background-color: $red;
+    color:#FFFFFF;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 500;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+/* PODCAST */
+.podcast {
+    background-image: url(../assets/nightSky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color:#FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+}
+
+.logoTextBadge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+
+    a {
+        padding-top: 50px;
+    
+    }
+}
+
+ 
+.podcastText {
+    width: 45vw;
+
+    p {
+        padding-bottom: 50px;
+    }
+}
+
+.viewPodcast {
+    background-color: $green;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+
+/* EXPERIENCE */
+.container {
+    background-color: $darkblue;
+    padding-bottom: 120px;
+}
+
+
+.experienceImage {
+    background-image: url(../assets/GerryTalking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 450px;
+    overflow: hidden;
+
+    h1 {
+        font-size: 4rem;
+        padding-left: 60px;
+    }
+
+    h1:first-of-type {
+        margin-top: 150px;
+        }
+
+}
+
+
+
+.container p {
+    padding: 60px;
+}
+
+.viewExperience {
+    background-color: $red;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+/* LOGO INFO */
+.logoFlex {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;    
+}
+
+.logoText {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.logo img {
+  animation-name: spin;
+  animation-duration: 55s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 0.2;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+
+.logoText p {
+    color: #FFFFFF;
+    padding-left: 6rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.logoText p a {
+    text-decoration: none;
+    color: $red;
+}
+
+.signature {
+    font-family: "Over the Rainbow";
+    font-weight: 400;
+    font-size: 3rem;
+    color:#FFFFFF;
+    margin-left: 12rem;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    display: block;
+    
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+  }
+  .video-wrapper {
+    background: black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+/* FOOTER */
+footer {
+    @include footer
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 950px) {
+
+    header {
+        padding-bottom: 40px;
+    }
+    .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 3rem
+    }
+
+    .menu {
+        padding-top: 20px;
+    }
+
+   .bio {
+       flex-direction: column-reverse;
+
+       img {
+           width: 40%;
+           margin: 0 auto;
+           padding-top: 50px;
+       }
+   }
+
+   .bioText {
+       width: 100%;
+       padding-top: 30px;
+       padding-bottom: 70px;
+   }
+
+   .flexContainer {
+       flex-direction: column;
+       padding-bottom: 80px;
+
+       .podcastText {
+           width: 90vw;
+           padding-top: 10px;
+       }
+
+       .logoTextBadge a {
+           padding-top: 10px;
+       }
+   }
+
+   .video-wrapper {
+       padding-top: 80px;
+   }
+
+   .logoFlex {
+       flex-direction: column;
+
+        .logoText {
+           padding-left: 0;
+           padding-top: 50px;
+       
+           p {
+           padding-left: 0;
+            }
+        }
+        
+        .signature {
+            margin-left: 5rem;
+        }
+    }
+
+}

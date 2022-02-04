@@ -1,0 +1,117 @@
+.list {
+    padding-bottom: 60px;
+    padding-top: 30px;
+    
+    h1 {
+        color: $red;
+        font-size: 4rem;
+        font-weight: 400;
+        padding-top: 30px;
+    }
+
+    h2 {
+        color: $red;
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+        font-weight: 400;
+        color: $red;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $darkblue;
+        padding-top: 50px;
+
+    }
+
+    a {
+        color: $red;
+    }
+}
+
+.intro {
+    background-color: $darkblue;
+
+    p {
+        color: #FFFFFF;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.list ul {
+    list-style: none;
+
+    li {
+        padding-bottom: 20px;
+    }
+}
+
+.line {
+    width: 50%;
+    border-top: 2px solid $red;
+    float: right;
+}
+
+.electedContainer {
+
+        ul {
+            padding-top: 10px;
+            font-size: 1.9rem;
+            list-style-type: circle;
+        }
+
+        h3 {
+            font-size: 2.3rem;
+            font-weight: 400;
+            color: $red;
+            margin-bottom: 10px;
+            
+        }
+}
+
+.italic {
+    display: block; 
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.developmentList ul li {
+    padding-bottom: 0px;
+
+}
+
+.developmentList .italic {
+        padding-bottom: 20px;
+}
+
+.back {
+    text-align: center;
+    padding-bottom: 50px;    
+}
+
+a {
+    text-decoration: none;
+    color: $red;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    :visited {
+        color: $red;
+    }
+}
+
+
+
+
+
+
+
+
