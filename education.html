@@ -14,18 +14,24 @@
 <body>
     <header>
         <nav>
-            <div class="flex-container">
+            <div class="flexContainer">
                 <a href="index.html">
-                    <img src="./assets/Logoname.jpg" alt="Gerry Oleman's Logo">
+                    <img src="assets/Logoname.jpg" alt="Gerry Oleman's Logo">
                 </a>
-                <ul>
-                    <li><a href="biography.html">Biography</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="https://www.teachingsintheair.ca" target="_blank" rel="noopener noreferer">Podcast</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>            
-        </nav>
+
+                 <input type="checkbox" id="nav" class="hidden"/>
+                <label for="nav" class="navOpen"><i></i><i></i><i></i></label>
+
+                <div class="navContainer">
+                    <ul>
+                        <li><a href="biography.html">Biography</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a class="viewPodcast" href="https://www.teachingsintheair.ca" target="_blank" rel="noopener noreferer">Podcast</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>          
     </header>
 
 
@@ -106,22 +112,22 @@
 
     <!-------- FOOTER -------->
 
-        <footer>
-
+    <footer>
+        <div class="footerWrapper">
             <div class="smallLogo">
-                <img src="./assets/gerryNameLogoWhite.png">
+                    <img src="./assets/gerryNameLogoWhite.png">
             </div>
-    
-            <p>Gerry Oleman © 2022</p>
-    
-    
+
+             <p>Gerry Oleman © 2022</p>
+
+
             <ul class="socialMedia">
                 <li><a href="https://www.facebook.com/teachingsintheairpodcast" target="_blank" rel="noopener noreferer"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="https://ca.linkedin.com/in/gerry-oleman-9171136b" target="_blank" rel="noopener noreferer"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="https://www.instagram.com/teachingscast/" target="_blank" rel="noopener noreferer"><i class="fab fa-instagram"></i></a></li>
             </ul>
-    
-        </footer>
+        </div>
+    </footer> 
         
 </body>
 </html>

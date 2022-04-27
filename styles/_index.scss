@@ -4,10 +4,14 @@
     background-color: $darkblue;
     display: flex;
     justify-content: space-between;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .bioText {
-    padding-top: 90px;
+    padding-top: 70px;
     width: 70%;
 
     :nth-child(2) {
@@ -52,11 +56,11 @@ h1 {
     font-size: 3rem;
 }
 
-.flexContainer {
+.podcastContainer {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
     padding-left: 60px;
     padding-right: 60px;
     align-items: center;
@@ -176,8 +180,8 @@ h1 {
     color: #FFFFFF;
     padding-left: 6rem;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.7rem;
-    font-weight: 400;
+    font-size: 1.9rem;
+    font-weight: 300;
 }
 
 .logoText p a {
@@ -206,7 +210,7 @@ video {
     width: 100%;
     opacity: 0.3;
   }
-  .video-wrapper {
+  .videoWrapper {
     background: black;
     position: relative;
     overflow: hidden;
@@ -223,19 +227,13 @@ footer {
 }
 
 
-/* MEDIA QUERIES */
+
+
+ /* MEDIA QUERIES */
 @media only screen and (max-width: 950px) {
 
-    header {
-        padding-bottom: 40px;
-    }
-    .flex-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
     h1 {
-        font-size: 3rem
+        font-size: 2.5rem;
     }
 
     .menu {
@@ -249,48 +247,117 @@ footer {
            width: 40%;
            margin: 0 auto;
            padding-top: 50px;
-       }
-   }
+       }    
+    }   
 
    .bioText {
        width: 100%;
        padding-top: 30px;
        padding-bottom: 70px;
-   }
 
-   .flexContainer {
-       flex-direction: column;
-       padding-bottom: 80px;
+       p {
+        font-size: 1.6rem;
+        padding-left: 40px;
+        padding-right: 40px;
+       }
+    }
 
-       .podcastText {
-           width: 90vw;
+    .view {
+        font-size: 1.8rem;
+        margin-left: 40px;
+    }
+
+    .podcastContainer {
+        flex-direction: column;
+        padding-bottom: 90px;
+    }
+
+    .podcastText {
+        width: 100vw;
+        padding-top: 10px;
+
+        p {
+            font-size: 1.6rem;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .viewPodcast {
+            font-size: 1.8rem;
+            margin-left: 40px;
+        }
+    }
+
+       .logoTextBadge {
+        padding-left: 0;
+        padding-bottom: 20px;
+
+           a {
            padding-top: 10px;
+           }
+
+           .titaLogo {
+               width: 50%;
+           }
        }
 
-       .logoTextBadge a {
-           padding-top: 10px;
-       }
-   }
+       .experienceImage {
+           height: 350px;
+           background-position: center;
 
-   .video-wrapper {
-       padding-top: 80px;
+           h1 {
+               font-size: 3rem;
+           }
+       }
+
+       .container {
+           padding-bottom: 90px;
+           
+        p {
+           font-size: 1.6rem;
+           padding: 40px;
+       }
+
+       .viewExperience {
+           font-size: 1.8rem;
+           margin-left: 40px;
+       }
+    }
+
+
+// ABOUT THE LOGO
+   .videoWrapper {
+       padding-top: 50px;
    }
 
    .logoFlex {
        flex-direction: column;
+       padding-bottom: 0;
+       padding-left: 0;
+       padding-right: 0;
 
-        .logoText {
+       .logoText {
            padding-left: 0;
-           padding-top: 50px;
-       
+           padding-top: 30px;
+
            p {
-           padding-left: 0;
-            }
-        }
-        
-        .signature {
-            margin-left: 5rem;
-        }
-    }
+               padding-left: 0;
+               font-size: 1.7rem;
+           }
+       }
+   }
 
-}
+   .logo {
+       padding-top: 20px;
+
+       img {
+           max-width: 150px;
+           max-height: auto;
+       }
+   }
+
+   .signature {
+       margin-left: 4rem;
+       font-size: 2.5rem;
+   }
+}  
